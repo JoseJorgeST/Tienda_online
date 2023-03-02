@@ -4,15 +4,22 @@
     box-sizing: border-box;
     background-color: #f4f4f4;
 }
+.my-order{
+    display: flex;
+    justify-content: center;
+}
+
 .my-order-container-time{
-    border: 1px solid red;
     width: 400px;
     height: 100px;
     padding: 12px;
     font-size: 19px;
     display: flex;
+    border: 1px solid #ccc8c8 ;
+    border-radius: 20px;
     justify-content: space-between;
     align-items: center;
+    margin: 10px 0 10px 0;
 }
 .my-order-container-time p:nth-child(1){
     font-weight: bold;
@@ -23,7 +30,6 @@
 }
 .product{
     width: 400px;
-    border: 1px solid blue;
     display: flex;
     align-items: center;
 }
@@ -46,4 +52,21 @@
 .p{
     color: gray;
     font-weight: bold;
+}
+
+@media (max-width: 640px) {
+    .my-order-container-time{
+        width: 320px;
+        padding: 7px;
+    }
+    .product{
+        width: 320px;
+    }
+    .product div:nth-child(1){
+        width: 70px;
+    }
+    .div p:nth-child(2){
+        display: none;
+        width: 400px;
+    }
 }
