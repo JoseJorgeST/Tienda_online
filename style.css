@@ -151,6 +151,8 @@ aside {
     right: 0;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   /* ShoopingCard*/
@@ -200,6 +202,9 @@ aside {
     font-size: var(--sm);
     margin-top: 0;
     margin-bottom: 36px;
+  }
+  .bike{
+    width: 300px;
   }
   .primary-button {
     background-color: var(--hospital-green);
@@ -338,9 +343,11 @@ aside {
     .desktop-menu{
         display: none;
     }
-    .product-detail {
+    #product-detail {
         width: 100%;
-      }
+    }
+    
+    
     
 }
 @media (min-width: 641px) {
