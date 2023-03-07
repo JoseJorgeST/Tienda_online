@@ -2,7 +2,7 @@ const email = document.querySelector('.narbar-email');
 const menu = document.querySelector('.desktop-menu');
 const iconmenucelular = document.querySelector('.image');
 const iconmenucarrito = document.querySelector('.carrito');
-const aside = document.querySelector('.product-detail');
+const shoppingCartContainer = document.querySelector('#shoppingCartContainer');
 const menucelular = document.querySelector('.mobile-menu');
 const cardsContainer = document.querySelector('.cards-container');
 
@@ -14,20 +14,20 @@ iconmenucarrito.addEventListener('click', toggleCarritoAsade)
 
 
 function toggledesktop_menu() {
-    const isAsideClosed = aside.classList.contains('inactive');
+    const isAsideClosed = shoppingCartContainer.classList.contains('inactive');
 
     if (!isAsideClosed) {
-        aside.classList.add('inactive')    
+        shoppingCartContainer.classList.add('inactive')    
     }
     menu.classList.toggle('inactive')
 }
 
 function togglecelular_menu() {
 
-    const isAsideClosed = aside.classList.contains('inactive');
+    const isAsideClosed = shoppingCartContainer.classList.contains('inactive');
 
     if (!isAsideClosed) {
-        aside.classList.add('inactive')    
+        shoppingCartContainer.classList.add('inactive')    
     }
 
     menucelular.classList.toggle('inactive')
@@ -41,7 +41,7 @@ function toggleCarritoAsade() {
         menucelular.classList.add('inactive')    
     }
 
-    aside.classList.toggle('inactive')
+    shoppingCartContainer.classList.toggle('inactive')
 }
 
 const productlist = [];
