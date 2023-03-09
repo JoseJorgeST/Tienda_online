@@ -21,6 +21,7 @@ function toggledesktop_menu() {
     if (!isAsideClosed) {
         shoppingCartContainer.classList.add('inactive')    
     }
+    closeProductdetailAside();
     menu.classList.toggle('inactive')
 }
 
